@@ -3,8 +3,10 @@ require 'booze_there_api/web'
 
 module BoozeThereAPI
     class << self
-        def self.default_saying
-            version: BoozeThereAPI::version
+        def default_saying
+            {
+            version: BoozeThereAPI::VERSION
+        }
         end
     end
 end

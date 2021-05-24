@@ -1,16 +1,16 @@
 require './lib/booze_there_api/version'
 
 Gem::Specification.new do |spec|
-    sepc.name           = 'booze_there_api'
+    spec.name           = 'booze_there_api'
     spec.version        = BoozeThereAPI::VERSION
-    sepc.authors        = %w[Logan Stucker]
+    spec.authors        = %w[Logan Stucker]
     spec.email          =['stuck124@umn.edu']
 
     spec.summary        = 'Booze There API'
     spec.description    = 'API to interact with the data used in Booze There'
     spec.homepage       = 'https://github.com/lfstucker/BoozeThereAPI'
     spec.license        = 'MIT'
-    spec.required_ruby_version = Gem:Requirment.new('>=2.7')
+    spec.required_ruby_version = Gem::Requirement.new('>=2.7')
 
     spec.metadata['homepage_uri'] = spec.homepage
     spec.metadata['source_code_uri'] = 'https://github.com/lfstucker/BoozeThereAPI'
@@ -27,12 +27,16 @@ Gem::Specification.new do |spec|
     spec.add_dependency 'faraday'
     spec.add_dependency 'faraday_middleware'
     spec.add_dependency 'sinatra'
+    spec.add_dependency 'oj'
     spec.add_dependency 'sinatra-contrib'
     spec.add_dependency 'uri'
 
     spec.add_development_dependency 'rake'
     spec.add_development_dependency 'rspec'
+    spec.add_development_dependency 'puma'
     spec.add_development_dependency 'rspec_junit_formatter'
     spec.add_development_dependency 'rubocop'
     spec.add_development_dependency 'simplecov'
+
+end
 
