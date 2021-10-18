@@ -4,9 +4,8 @@ require 'booze_there_api/web'
 module BoozeThereAPI
     class << self
         def default_saying
-            {
-            version: BoozeThereAPI::VERSION
-        }
+        saying = { version: BoozeThereAPI::VERSION }
+        saying.to_s
         end
     end
 end
