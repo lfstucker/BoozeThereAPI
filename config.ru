@@ -5,8 +5,8 @@ require 'puma'
 require 'oj'
 require 'multi_json'
 
-require 'booze_there_api'
-require 'booze_there_api/web'
+require_relative 'booze_there_api'
+require_relative 'booze_there_api/web'
 
 run BoozeThereAPI::Web
 
