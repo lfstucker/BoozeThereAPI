@@ -30,7 +30,6 @@ Gem::Specification.new do |spec|
     spec.add_dependency 'oj'
     spec.add_dependency 'sinatra-contrib'
     spec.add_dependency 'uri'
-    spec.add_dependency 'mongoid'
 
     spec.add_development_dependency 'rake'
     spec.add_development_dependency 'rspec'
