@@ -111,7 +111,7 @@ GEM
     uri (0.10.1)
 
 PLATFORMS
-  x86_64-darwin-19
+  ruby
   x86_64-linux
 
 DEPENDENCIES
