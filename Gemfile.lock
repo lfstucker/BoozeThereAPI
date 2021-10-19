@@ -112,7 +112,6 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
-  x86_64-linux
 
 DEPENDENCIES
   booze_there_api!
@@ -124,4 +123,4 @@ DEPENDENCIES
   simplecov
 
 BUNDLED WITH
-   2.2.3
+   2.2.29
