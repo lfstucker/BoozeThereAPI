@@ -9,16 +9,25 @@ require 'sinatra/namespace'
 require 'sinatra/reloader'
 
 module BoozeThereAPI
-    class Web < Sinatra::Base
-
-
-        get '/' do
-            BoozeThereAPI.default_saying
-        end
-
+  class Web < Sinatra::Base
+    get '/' do
+      BoozeThereAPI.default_saying
     end
 
+    post '/add' do
+      return 'wip'
+    end
+
+    get '/current_points' do
+      return 'wip'
+    end
+
+    get '/offers' do
+      return 'wip'
+    end
+
+    get '/loc_blob' do
+      return 'wip'
+    end
+  end
 end
-
-
-

@@ -1,5 +1,7 @@
-#\ --quiet
-#frozen_string_litteral: true
+# frozen_string_literal: true
+
+# \ --quiet
+# frozen_string_litteral: true
 
 # require_relative 'puma'
 # require_relative 'oj'
@@ -11,5 +13,4 @@ require 'booze_there_api/web'
 run BoozeThereAPI::Web
 
 at_exit do
-
 end
