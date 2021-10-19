@@ -28,6 +28,7 @@ Gem::Specification.new do |spec|
     spec.add_dependency 'faraday_middleware'
     spec.add_dependency 'sinatra'
     spec.add_dependency 'oj'
+    spec.add_dependency 'thor'
     spec.add_dependency 'sinatra-contrib'
     spec.add_dependency 'uri'
 
