@@ -5,8 +5,8 @@
 # require_relative 'oj'
 # require_relative 'multi_json'
 
-require_relative 'booze_there_api'
-require_relative 'booze_there_api/web'
+require 'booze_there_api'
+require 'booze_there_api/web'
 
 run BoozeThereAPI::Web
 
