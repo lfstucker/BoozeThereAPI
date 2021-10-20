@@ -10,9 +10,23 @@ require 'sinatra/reloader'
 
 module BoozeThereAPI
   class Web < Sinatra::Base
+
+    
+
     before do
       content_type :json
+      headers 'Access-Control-Allow-Origin' => '*',
+      headers 'Access-Control-Allow-Headers' => '*',
+      headers 'Access-Control-Allow-Methods' => %w[OPTIONS GET POST DELETE PATCH PUT],
     end
+
+    options '*' do
+      response.headers['Allow'] = 'GET, PUT, POST, DELETE, OPTIONS'
+      response.headers['Access-Control-Allow-Headers'] = 'Authorization, Content-Type, Accept, X-User-Email, X-Auth-Token'
+      response.headers['Access-Control-Allow-Origin'] = '*'
+      200
+    end
+
 
     get '/' do
       BoozeThereAPI.default_saying

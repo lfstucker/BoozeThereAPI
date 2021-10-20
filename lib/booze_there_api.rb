@@ -7,7 +7,6 @@ module BoozeThereAPI
   class << self
     def default_saying
       saying = { version: BoozeThereAPI::VERSION }
-      saying.to_s
     end
   end
 end
