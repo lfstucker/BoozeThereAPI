@@ -12,12 +12,5 @@ require 'booze_there_api/web'
 
 run BoozeThereAPI::Web
 
-use Rack::Cors do
-  allow do
-    origins '*'
-    resource '*', headers: :any, methods: :any
-  end  
-end
-
 at_exit do
 end
