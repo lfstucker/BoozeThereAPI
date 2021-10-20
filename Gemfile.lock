@@ -7,6 +7,8 @@ PATH
       faraday
       faraday_middleware
       oj
+      pg
+      sequel
       sinatra
       sinatra-contrib
       thor
@@ -51,6 +53,7 @@ GEM
     parallel (1.21.0)
     parser (3.0.2.0)
       ast (~> 2.4.1)
+    pg (1.2.3)
     puma (5.5.2)
       nio4r (~> 2.0)
     rack (2.2.3)
@@ -88,6 +91,7 @@ GEM
       parser (>= 3.0.1.1)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
+    sequel (5.49.0)
     simplecov (0.21.2)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
