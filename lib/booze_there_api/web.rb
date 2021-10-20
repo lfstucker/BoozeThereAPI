@@ -42,6 +42,10 @@ module BoozeThereAPI
     get '/offers' do
       return 'wip'
     end
+    
+    get '/user' do
+      return 'DarkerParker'
+    end
 
     get '/loc_blob' do
       return {
