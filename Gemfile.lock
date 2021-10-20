@@ -54,6 +54,7 @@ GEM
     puma (5.5.2)
       nio4r (~> 2.0)
     rack (2.2.3)
+    rack-cors (1.1.1)
     rack-protection (2.1.0)
       rack
     rainbow (3.0.0)
@@ -122,6 +123,7 @@ DEPENDENCIES
   rspec_junit_formatter
   rubocop
   simplecov
+  rack-cors
 
 BUNDLED WITH
    2.2.29
