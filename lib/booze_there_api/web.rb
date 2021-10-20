@@ -16,7 +16,7 @@ module BoozeThereAPI
               'Access-Control-Allow-Headers' => '*',
               'Access-Control-Allow-Methods' => %w[OPTIONS GET POST DELETE PATCH PUT]
 
-      halt 401 unless request.request_method == 'OPTIONS'
+      # halt 401 unless request.request_method == 'OPTIONS'
     end
 
     options '*' do
