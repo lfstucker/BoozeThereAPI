@@ -6,11 +6,13 @@ PATH
       concurrent-ruby-ext
       faraday
       faraday_middleware
+      mysql2
       oj
       pg
       sequel
       sinatra
       sinatra-contrib
+      sqlite3
       thor
       uri
 
@@ -48,6 +50,7 @@ GEM
     multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    mysql2 (0.5.3)
     nio4r (2.5.8)
     oj (3.13.9)
     parallel (1.21.0)
@@ -109,6 +112,7 @@ GEM
       rack-protection (= 2.1.0)
       sinatra (= 2.1.0)
       tilt (~> 2.0)
+    sqlite3 (1.4.2)
     thor (1.1.0)
     tilt (2.0.10)
     unicode-display_width (2.1.0)

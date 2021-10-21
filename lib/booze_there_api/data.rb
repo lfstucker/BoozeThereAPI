@@ -32,7 +32,7 @@ module BoozeThereAPI
 
       def load_models
         models_array = Dir.glob('lib/booze_there_api/data/models/**')
-        models_arrary.each do |model|
+        models_array.each do |model|
           require_model_path = model.gsub('lib/', '')
           require require_model_path
         end
@@ -61,8 +61,8 @@ module BoozeThereAPI
       end
 
       def plugins
-        Seqeul :Model.plugin :update_or_create
-        Sequel :Model.plugin :association_dependencies
+        Sequel::Model.plugin :update_or_create
+        Sequel::Model.plugin :association_dependencies
       end
 
       def setup_oj_serializer
@@ -79,6 +79,10 @@ module BoozeThereAPI
                 end
         @connection = nil
         @migration_version = nil
+
+        puts opts
+        puts connection
+        puts migration_version 
 
         raise 'failed to start db connection' unless connected?
 

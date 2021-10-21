@@ -24,7 +24,7 @@ module BoozeThereAPI
 
       def adapter
         # will need to change to postgres
-        ENV['adapter'].nil ? 'postgresql' : ENV['adapter']
+        ENV['adapter'].nil? ? 'mysql2' : ENV['adapter']
       end
       module_function :adapter
 
@@ -69,7 +69,7 @@ module BoozeThereAPI
       module_function :connection_validation_timeout
 
       def preconnect
-        ENV['v'] || 'concurrently'
+        ENV['preconnect'] || 'concurrently'
       end
       module_function :preconnect
     end

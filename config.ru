@@ -10,6 +10,7 @@
 require 'booze_there_api'
 require 'booze_there_api/web'
 
+BoozeThereAPI.start!
 run BoozeThereAPI::Web
 
 at_exit do

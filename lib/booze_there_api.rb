@@ -7,7 +7,7 @@ require 'booze_there_api/web'
 module BoozeThereAPI
   class << self
     def start!
-      puts 'starting up booze there api'
+      puts 'starting up booze there api *****************************'
       BoozeThereAPI::Data.start!
     end
 
