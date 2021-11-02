@@ -34,7 +34,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'sequel'
   spec.add_dependency 'sinatra'
   spec.add_dependency 'sinatra-contrib'
-  spec.add_dependency 'sqlite3'
   spec.add_dependency 'thor'
   spec.add_dependency 'uri'
 

@@ -12,7 +12,6 @@ PATH
       sequel
       sinatra
       sinatra-contrib
-      sqlite3
       thor
       uri
 
@@ -81,7 +80,7 @@ GEM
     rspec-support (3.10.2)
     rspec_junit_formatter (0.4.1)
       rspec-core (>= 2, < 4, != 2.12.0)
-    rubocop (1.22.1)
+    rubocop (1.22.3)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -94,7 +93,7 @@ GEM
       parser (>= 3.0.1.1)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
-    sequel (5.49.0)
+    sequel (5.50.0)
     simplecov (0.21.2)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -112,11 +111,10 @@ GEM
       rack-protection (= 2.1.0)
       sinatra (= 2.1.0)
       tilt (~> 2.0)
-    sqlite3 (1.4.2)
     thor (1.1.0)
     tilt (2.0.10)
     unicode-display_width (2.1.0)
-    uri (0.10.1)
+    uri (0.11.0)
 
 PLATFORMS
   x86_64-darwin-19
