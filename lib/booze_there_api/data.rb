@@ -41,17 +41,21 @@ module BoozeThereAPI
       def connection
         return @connection unless @connection.nil?
 
-        if default_credentials[:adapter] == 'sqlite'
-          database = "#{default_credentials[:database]}.db"
-          Sequel.sqlite(database)
-          Sequel.sqlite("./#{database}")
-          @connection = Sequel.connect("sqlite://#{database}")
-        else
-          @connection = Sequel.connect(**opts.merge(default_credentials))
-          @connection.extension(:connection_validator)
-          @connection.extension(:pagination)
-          @connection.pool.connection_validation_timeout = connection_validation_timeout
-        end
+        # if default_credentials[:adapter] == 'sqlite'
+        #   database = "#{default_credentials[:database]}.db"
+        #   Sequel.sqlite(database)
+        #   Sequel.sqlite("./#{database}")
+        #   @connection = Sequel.connect("sqlite://#{database}")
+        # else
+        #   @connection = Sequel.connect(**opts.merge(default_credentials))
+        #   @connection.extension(:connection_validator)
+        #   @connection.extension(:pagination)
+        #   @connection.pool.connection_validation_timeout = connection_validation_timeout
+        # end
+        @connection = Sequel.connect(**opts.merge(default_credentials))
+        @connection.extension(:connection_validator)
+        @connection.extension(:pagination)
+        @connection.pool.connection_validation_timeout = connection_validation_timeout
 
         @connection
       end

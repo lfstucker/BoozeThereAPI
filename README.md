@@ -1,21 +1,30 @@
 # BoozeThereAPI
 API connection to booze there db to interface with app
 
+To run locally:
 
-to help: 
-install rvm
-dont have to use gpg2
-next need to install ruby, run gem install bundle exec ect
+Make sure you have ruby + bundler installed, as well as mysql configured and running
 
-bundle exec rackup to start
+# FOR MySQL
 
-https://docs.mongodb.com/mongoid/current/tutorials/getting-started-sinatra/
+If on a mac, easiest run is to run through brew
 
-start local mongo:
-brew services start mongodb-community@4.4
+To check if you have the mysql service downlaoded and running, run `brew services list`
 
-stop:
-brew services stop mongodb-community@4.4
+You also must make sure you mysql instance has this user configured with all access:
+UN: boozethere
+PW: root
 
-See running mongo:
-brew services list
+and the database booze_there_local
+
+
+
+# TO START
+
+`export adapter=mysql2` 
+
+`run bundle update`
+
+`run bundle exec rackup` for the app to start
+
+
